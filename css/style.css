@@ -1,23 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --rose-pink: #f9004d;
+    --white: #fff;
+    --blackConteudo: #2e2c2c;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+}
+
+body {
     background-color: #141414;
+}
+
+.row {
+    margin-top: 10%;
 }
 
 .hrd-navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 1.5em 0;
 }
-
-/* .hrd-navbar .hrd-logo-img {
-    width: 100%;
-    height: 100%;
-} */
 
 .hrd-navbar .hrd-logo-img img {
     width: 100px;
@@ -41,19 +51,142 @@
     text-decoration: none;
     color: grey;
     font-size: 1.125em;
+    color: rgb(255 255 255);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
 .hrd-navbar .links ul li a:hover {
     color: #e8505b;
 }
 
-.hrd-navbar  .hrd-titulo{
+.hrd-navbar .hrd-titulo {
     color: #fff;
     font-size: 35px;
     cursor: pointer;
     letter-spacing: 1px;
     margin-left: 50px;
 }
-.hrd-navbar  .hrd-titulo span{
-    color: #f9004d;
-} 
+
+.hrd-navbar .hrd-titulo span {
+    color: var(--rose-pink);
+}
+
+.hrd-imagem img {
+    width: 50%;
+    height: 50%;
+    margin-left: 20%;
+    border-radius: 10px;
+    position: relative;
+    left: -100%;
+    animation: movimentoEsquerdo 1s ease-in-out forwards;
+}
+
+.hrd-conteudo {
+    margin-top: 20%;
+    margin-right: 10%;
+    color: var(--white);
+    position: relative;
+    left: -100%;
+    animation: movimentoEsquerdo 1s ease-in-out forwards;
+}
+
+.hrd-conteudo h2 {
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.hrd-conteudo h5 {
+    margin-top: 5%;
+    text-transform: capitalize;
+}
+
+.hrd-conteudo span {
+    color: var(--rose-pink);
+}
+
+@keyframes movimentoEsquerdo {
+    to {
+        left: 0;
+    }
+}
+
+.hrd-ferramentas {
+    margin-left: 20%;
+}
+
+.hrd-ferramentas h2 {
+    margin-left: 15%;
+    color: var(--white);
+    margin-bottom: 10%;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.hrd-titulo {
+    color: var(--white);
+    margin-left: 40%;
+}
+
+.carousel {
+    margin-left: 7%;
+}
+
+
+.hrd-redes-socials {
+    display: flex;
+
+}
+
+.hrd-redes-socials a {
+    background-color: #f9004d;
+    width: 45px;
+    height: 45px;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.hrd-redes-socials a:hover {
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+.carousel-indicators{
+    margin-bottom: -5%;
+    margin-left: 13%;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h6 {
+    font-size: 35px;
+    color: #fff;
+}
+
+footer p {
+    color: #fff;
+    font-size: 15px;
+    width: 500px;
+    text-align: center;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    line-height: 23px;
+}
