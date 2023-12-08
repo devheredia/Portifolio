@@ -90,3 +90,14 @@
         opacity: 0.3;
     }
 }
+
+
+@media (min-width: 414px) and (max-width: 896px) {
+    .myCard {
+        width: 70%;
+    }
+
+    .title{
+        font-size: 1em;
+    }
+}
